@@ -1,73 +1,66 @@
-<?php
-
-?>
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Detalhes do livro | Aluga-se Histórias</title>
-    <link rel="stylesheet" href="estilos/estilos.css">>
+    <link rel="stylesheet" href="css/style.css">
 </head>
-
 <body>
 
-    <header>
-        <div class="logo">Aluga-se <span>Histórias</span></div>
+<header class="cabecalho">
+    <a href="index.php" class="logo">📖 Aluga-se Histórias.</a>
+    <nav>
+        <a href="index.php">Início</a>
+        <a href="catalogo.php">Catálogo</a>
+        <a href="sobre.php">Sobre</a>
+        <a href="aluguel.php">Aluguel</a>
+    </nav>
+    <a href="catalogo.php" class="botao-header">Encontrar livros</a>
+</header>
 
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="catalogo.html">Catálogo</a>
-        </nav>
-    </header>
+<main class="secao">
+    <a href="catalogo.php" class="voltar">← Voltar para o catálogo</a>
 
-    <main class="detalhes">
-
-        <a href="catalogo.html" class="voltar">
-            ← Voltar ao catálogo
-        </a>
-
-        <div class="detalhes-container">
-
-            <img src="img/livro1.jpg" alt="A Biblioteca da Meia-Noite">
-
-            <div class="detalhes-info">
-
-                <h1>A Biblioteca da Meia-Noite</h1>
-
-                <p><strong>Autor:</strong> Matt Haig</p>
-
-                <p><strong>Categoria:</strong> Ficção</p>
-
-                <p><strong>Gênero:</strong> Fantasia</p>
-
-                <p><strong>Classificação:</strong>
-                    <span class="estrelas">★★★★★</span>
-                </p>
-
-                <h3>Sobre este livro</h3>
-
-                <p>
-                    Entre a vida e a morte existe uma biblioteca onde
-                    cada livro representa uma possibilidade diferente
-                    de vida. Uma história sobre escolhas, arrependimentos
-                    e novas oportunidades.
-                </p>
-
-                <a href="aluguel.html" class="botao">
-                    Solicitar aluguel
-                </a>
-
-            </div>
-
+    <section class="detalhes-livro">
+        <div class="capa-detalhe">
+            <img src="img/livro1.jpg" alt="Capa do livro Jardim de Memórias">
         </div>
 
-    </main>
+        <div class="informacoes-livro">
+            <span class="genero-romance">Romance</span>
+            <h1>Jardim de Memórias</h1>
+            <p class="autor">Autora: Ana Martins</p>
 
-    <footer>
-        <p>© 2026 Aluga-se Histórias</p>
-    </footer>
+            <p>Uma história emocionante sobre recomeços, descobertas e a importância das lembranças.</p>
+
+            <div class="informacoes-extra">
+                <p><strong>Gênero:</strong> Romance</p>
+                <p><strong>Páginas:</strong> 320</p>
+                <p><strong>Disponibilidade:</strong> Disponível para aluguel</p>
+                <p><strong>Prazo:</strong> 14 dias</p>
+            </div>
+
+            <a href="aluguel.php" class="botao-principal">Solicitar aluguel</a>
+            <a href="catalogo.php" class="botao-secundario">Voltar ao catálogo</a>
+        </div>
+    </section>
+
+    <section class="descricao-livro">
+        <h2>Sobre o livro</h2>
+        <p>
+            Uma narrativa sobre novas oportunidades, sentimentos e
+            caminhos inesperados. Uma leitura para quem gosta de
+            histórias que despertam emoções.
+        </p>
+    </section>
+</main>
+
+<footer class="rodape">
+    <a href="index.php" class="logo">📖 Aluga-se Histórias.</a>
+    <p>Mais que livros, novas histórias.</p>
+    <p>© 2026 Aluga-se Histórias.</p>
+</footer>
 
 </body>
 </html>
-```
